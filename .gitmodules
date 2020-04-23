@@ -1,0 +1,3 @@
+[submodule "themes/simple"]
+	path = themes/simple
+	url = https://github.com/slin63/simple-style
