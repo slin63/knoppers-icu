@@ -1,0 +1,43 @@
+<!-- https://discourse.gohugo.io/t/javascript-in-blogpost-but-not-on-all-sites-at-the-same-time/3978/11 -->
+
+<div class="download-area">
+  <form onsubmit="generateCurlStatement();return false;">
+    <input type="submit" value="download selected" style="margin-right:.2em;">
+  </form>
+  <form onsubmit="generateCurlStatement(true);return false;">
+    <input type="submit" value="download all" style="margin-left:.2em;">
+  </form>
+</div>
+<div class="download-area">
+    <textarea id="curlbox" rows="3" cols="50" placeholder=". . ." readonly>
+    </textarea>
+</div>
+
+
+<script type="text/javascript">
+  function generateCurlStatement(all) {
+    var inputs = document.getElementsByTagName("input");
+    var checkedCount = 0;
+    var curlStatement = "curl --remote-name-all {";
+    for (var i = 0; i < inputs.length; i++) {
+      if (inputs[i].type == "checkbox") {
+        var value = inputs[i]["value"];
+        var checked = inputs[i].checked;
+        if (value.startsWith("http") && (checked || all)) {
+          checkedCount = checkedCount + 1;
+          curlStatement = curlStatement + value + ","
+        }
+      }
+    }
+    if (checkedCount == 0) {
+      document.getElementById("curlbox").value="please select some images to download first";
+      return
+    }
+    curlStatement = curlStatement.substring(0, curlStatement.length - 1) + "}";
+    document.getElementById("curlbox").value=curlStatement;
+    return
+  }
+</script>
+
+
+

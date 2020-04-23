@@ -74,3 +74,5 @@ draft: true
     </label>
   </div>
 </div>
+
+{{% download_checked %}}
