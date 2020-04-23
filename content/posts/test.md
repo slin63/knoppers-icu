@@ -5,14 +5,15 @@ draft: true
 ---
 
 <div class="grid-container">
-
   <div class="grid-item">
     <div class="grid-image">
-      <img src="https://s3.amazonaws.com/cdn.knoppers.icu/jj/DSC_3924_thumbs.jpg">
+      <a href="https://s3.amazonaws.com/cdn.knoppers.icu/jj/DSC_3924.jpg">
+        <img src="https://s3.amazonaws.com/cdn.knoppers.icu/jj/DSC_3924_thumbs.jpg">
+      </a>
     </div>
     <label class="checkbox-inline">
       <div>
-        <input type="checkbox" class="download-check">1.jpg
+        <input type="checkbox" class="download-check" value="https://s3.amazonaws.com/cdn.knoppers.icu/jj/DSC_3924.jpg">1.jpg
         <div class="exif">d3400 - f/10 - 1/1600 - 35mm - ISO800</div>
         <div class="exif">6000x4000 - april 18th 6:00pm</div>
       </div>
@@ -21,11 +22,13 @@ draft: true
 
   <div class="grid-item">
     <div class="grid-image">
-      <img src="https://s3.amazonaws.com/cdn.knoppers.icu/birds/downywoodpecker_thumbs.jpg">
+      <a href="https://s3.amazonaws.com/cdn.knoppers.icu/birds/downywoodpecker.jpg">
+        <img src="https://s3.amazonaws.com/cdn.knoppers.icu/birds/downywoodpecker_thumbs.jpg">
+      </a>
     </div>
     <label class="checkbox-inline">
       <div>
-        <input type="checkbox" class="download-check">1.jpg
+        <input type="checkbox" class="download-check" value="https://s3.amazonaws.com/cdn.knoppers.icu/birds/downywoodpecker.jpg">1.jpg
         <div class="exif">d3400 - f/10 - 1/1600 - 35mm - ISO800</div>
         <div class="exif">6000x4000 - april 18th 6:00pm</div>
       </div>
