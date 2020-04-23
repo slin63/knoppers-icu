@@ -1,12 +1,34 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "knoppers-icu"
+title = "knop·pers·i·c·u"
 theme = "simple"
-
 staticDir = ["static"]
+paginate = 12
+
+[params]
+subtitle = "welcome friends, enemies"
+favicon = "/images/favico.png"
+
+[[menu.main]]
+name = "home"
+url  = "/"
+weight = 0
+
+[[menu.main]]
+name = "chron·ic·piz·za"
+url  = "http://www.chronicpizza.net"
+weight = 3
+
+[[menu.main]]
+name = "about"
+url  = "/about"
+weight = 5
+
+
+[Author]
+  name = "knoppers"
 
 [deployment]
-
 [[deployment.targets]]
 # An arbitrary name for this target.
 name = "s3"
