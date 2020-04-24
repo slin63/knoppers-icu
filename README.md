@@ -4,6 +4,8 @@
 
 A programmatically generated photography archive powered by [knoppers.icu.gen](https://github.com/slin63/s3-page-generator).
 
+Read about it here: [chronicpizza.net/posts/knoppersicu](https://www.chronicpizza.net/posts/knoppersicu/).
+
 ##### Goal:
 
 To create a responsive and fast web service for previewing and downloading high-res JPEGs of my photography.
