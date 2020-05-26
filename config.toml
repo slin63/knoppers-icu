@@ -2,7 +2,6 @@ baseURL = "/"
 languageCode = "en-us"
 title = "knop·pers·i·c·u 📷"
 theme = "simple"
-staticDir = ["static"]
 paginate = 12
 
 [params]
